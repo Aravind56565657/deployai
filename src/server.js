@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 
 // Health check
 app.get('/health', (_req, res) => {
-  res.json({ status: 'ok', model: process.env.GEMINI_MODEL || 'gemini-1.5-flash' });
+  res.json({ status: 'ok', model: process.env.GROQ_MODEL || 'compound-beta-mini' });
 });
 
 // POST /classify
